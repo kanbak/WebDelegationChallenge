@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>
 -(IBAction)goToUrl:(id)sender;
+- (IBAction)goButton:(id)sender;
 
 @end

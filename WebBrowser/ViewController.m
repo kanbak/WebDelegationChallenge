@@ -50,10 +50,12 @@
     
 }
 
-- (IBAction)goToUrl:(id)sender;{
+- (IBAction)goToUrl:(id)sender;
+{
     NSURL *url = [NSURL URLWithString:textField.text];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
+    [textField resignFirstResponder];
 }
 
 #pragma mark UIwebview delegate
